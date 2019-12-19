@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 .containeer {
     position: relative;
     margin: auto;
@@ -165,24 +166,44 @@ a {
 }
 
 /*//////////////////*/
+.ads {
+    border-top: 2px rgb(165, 154, 154) solid;
+    border-bottom: 2px rgb(165, 154, 154) solid;
+}
 .feature-ads {
+    position: relative;
     float: left;
     background-color: tomato;
-    width: 50%;
+    width: 48%;
+    padding-bottom: 20px;
 }
 .latest-ads {
+    position: relative;
     float: left;
     background-color: lightcoral;
-    width: 50%;
+    width: 48%;
+    margin-left: 4%;
+    padding-bottom: 20px;
 }
-.feature-ads-title {
+.feature-ads-title, .latest-ads-title {
     text-transform: capitalize;
     font-weight: bold;
     font-size: 17px;
+    color: rgb(36, 36, 113);
+    display: inline-block;
+}
+.feature-ads span, .latest-ads span{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(36, 36, 113);
 }
 .next , .prev {
     background-color: inherit;
     border: none;
+}
+.prev {
+    padding-right: 10px;
 }
 .next:before {
     content: "<";
@@ -195,4 +216,51 @@ a {
     overflow: hidden;
     background-color: lawngreen;
     margin: auto;
+    padding: 50px 0;
+}
+.feature-ads-content {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    background-color: royalblue;
+    top: 30%;
+}
+/* ads details*/
+.clear {
+    clear: both;
+}
+.ads-details {
+    background-color: teal;
+}
+.ad-img {
+    position: relative;
+    width: 14%;
+    float: left;
+}
+.ad-img img {
+    width: 100%;
+}
+.m-right {
+ margin-right: 2%;
+}
+.m-left {
+    margin-left: 2%;
+}
+.middle-left {
+ margin-left: 3%;
+}
+.middle-right {
+    margin-right: 3%;
+}
+.ad-description {
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(36, 36, 113);
+}
+.ad-price {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ef3b44;
 }
