@@ -1,9 +1,8 @@
-.head-list ul li a:hover {
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
-
-
 .containeer {
     position: relative;
     margin: auto;
@@ -103,7 +102,7 @@
  padding:  10px 20px;
  border: solid 2px white;
  border-radius: 20px 0 0 20px;
- transition: border .5s;
+ transition: border .9s;
 }
 #categories {
     padding:  10px;
@@ -113,29 +112,87 @@
     background-position: 4 8;
     padding-left: 30px;
     border: solid 0px white;
-    transition: border .5s;
+    transition: border .9s;
 }
 #All-seties {
     padding:  10px;
     border-radius: 0 20px 20px 0;
     border: solid 0px white;
-    transition: border .5s;
+    transition: border .9s;
 }
 #keywords:hover, #categories:hover, #All-seties:hover {
     border: solid 2px rgb(78, 78, 223);
 }
 /*///////*/
 .container {
+    width: 68%;
     overflow: hidden;
+    border-top: rgb(226, 219, 219) solid 2px;
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 .categ-img {
+    text-align: center;
+    /* background-color: tomato; */
     position: relative;
-    width: 10%;
+    width: 10.6%;
     float: left;
+    padding: 20px;
 }
 .categ-img img {
     width: 80%;
 }
-.middle {
-    margin: 0 16.666666666666666666%;
+a {
+    text-decoration: none;
+}
+.categ-img span {
+    display: block; 
+    width: 90px;
+    padding-top: 10px;
+    /* background-color: yellow; */
+    color: rgb(68, 68, 211);
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 14px;
+}
+.between {
+    margin: 0 3%;
+}
+.categs {
+    /* background-color: violet; */
+    
+    margin-top: 30px;
+}
+
+/*//////////////////*/
+.feature-ads {
+    float: left;
+    background-color: tomato;
+    width: 50%;
+}
+.latest-ads {
+    float: left;
+    background-color: lightcoral;
+    width: 50%;
+}
+.feature-ads-title {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 17px;
+}
+.next , .prev {
+    background-color: inherit;
+    border: none;
+}
+.next:before {
+    content: "<";
+}
+.prev:before {
+    content: ">";
+}
+.container2 {
+    width: 80%;
+    overflow: hidden;
+    background-color: lawngreen;
+    margin: auto;
 }
