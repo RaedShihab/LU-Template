@@ -6,6 +6,8 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: Myriad Pro,Myriad,Liberation Sans,Nimbus Sans L,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
+
+/*Header*/
 .containeer {
     position: relative;
     margin: auto;
@@ -59,9 +61,13 @@ h1, h2, h3, h4, h5, h6 {
 .head-button button {
     background-color: #ef3b44;
     border: #ef3b44 solid 2px;
+    color: white;
     border-radius: 50px;
     width: 250px;
     height: 50px;
+}
+.head-button button i {
+    padding-right: 10px;
 }
 .phone-language-section {
     width: 25%;
@@ -420,8 +426,8 @@ a {
 .button-bottom:hover {
     opacity: .9;
 }
-/*header 1*/
-.header1 {
+/*footer 1*/
+.footer1 {
     padding: 80px 0;
     width: 100%;
     margin: auto;
@@ -494,11 +500,50 @@ a {
     left: 9%;
     color: white;
 }
-.header1 h3 {
+.footer1 h3 {
     position: absolute;
     display: inline-block;
     color: #fff;
     font-size: 18px;
     font-weight: bold;
     left: 20%;
+}
+
+/*Footer*/
+.footer {
+    position: relative;
+    padding: 50px 0;
+    height: 205px;
+}
+.socialMedia-icons {
+    position: absolute;
+    left: 20%;
+}
+.socialMedia-icons a i{
+    color: rgb(95, 91, 91);
+}
+.socialMedia-icons a{
+    padding: 10px;
+}
+.socialMedia-icons a:hover {
+    background-color: rgb(218, 203, 203);
+}
+.contact-us {
+    position: absolute;
+    right: 20%;
+}
+.contact-us a{
+    display: inline-block;
+    color: rgb(27, 27, 138);
+    text-decoration: none;
+    padding: 10px;
+}
+.contact-us a:hover {
+    background-color: rgb(218, 203, 203);
+}
+.copy-rights {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%);
 }
