@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+h1, h2, h3, h4, h5, h6 {
+    font-family: Myriad Pro,Myriad,Liberation Sans,Nimbus Sans L,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
 .containeer {
     position: relative;
     margin: auto;
@@ -128,7 +130,7 @@
 .container {
     width: 68%;
     overflow: hidden;
-    border-top: rgb(226, 219, 219) solid 2px;
+    border-top: rgb(218, 203, 203) solid 2px;
     padding-top: 60px;
     padding-bottom: 30px;
 }
@@ -167,8 +169,8 @@ a {
 
 /*//////////////////*/
 .ads {
-    border-top: 2px rgb(165, 154, 154) solid;
-    border-bottom: 2px rgb(165, 154, 154) solid;
+    border-top: 2px rgb(218, 203, 203) solid;
+    border-bottom: 2px rgb(218, 203, 203)solid;
 }
 .feature-ads {
     position: relative;
@@ -270,7 +272,7 @@ a {
 /*ads btns*/
 .call-btn, .chat-btn {
     background-color: inherit;
-    border: 2px rgb(165, 154, 154) solid;
+    border: 2px rgb(218, 203, 203) solid;
     border-radius: 50px 50px 50px 50px;
     width: 85px;
     height: 30px;
@@ -319,7 +321,7 @@ a {
 .your-store-item img {
     width: 100%;
     border:  solid 5px;
-    border-color: rgb(165, 154, 154);
+    border-color: rgb(218, 203, 203);
     border-radius: 30%;
     transition: border .3s;
 }
@@ -365,4 +367,138 @@ a {
 .ad-bar .see-all-link, .ad-bar .add-link {
     color: rgb(27, 27, 138);
     text-transform: capitalize;
+}
+
+/* free ads*/
+.post-free-item {
+    float: left;
+    width: 10%;
+}
+.post-free-item.middle {
+    margin: 0 9%;
+}
+.post-free-item span {
+    display: block;
+    padding-top: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: rgb(27, 27, 138);
+    font-size: 13px;
+}
+.post-free-item img {
+    width: 100%;
+}
+.post-free {
+    overflow: hidden;
+    width: 55%;
+    margin: auto;
+    border-top: rgb(218, 203, 203) 2px solid;
+    padding: 70px 0 150px 0;
+}
+.button-bottom {
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    background-color: #ef3b44;
+    margin-top: 20px;
+    left: 50%;
+    transform: translate(-60%);
+    border: 2px #ef3b44 solid;
+    border-radius: 50px 50px 50px 50px; 
+    transition: opacity .2s;
+}
+.button-bottom span {
+   color: white;
+   font-weight: bold;
+}
+.button-bottom i {
+    color: white;
+   font-weight: bold;
+   padding-right: 10px;
+   font-size: 18px;
+}
+.button-bottom:hover {
+    opacity: .9;
+}
+/*header 1*/
+.header1 {
+    padding: 80px 0;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding: 80px 0;
+    height: 210px;
+    background-color: #134b8f;
+}
+.app-store {
+    background-color: white;
+    position: absolute;
+    display: inline-block;
+    width: 10%;
+    right: 31%;
+    height: 50px;
+}
+.app-store span {
+    position: absolute;
+    display: inline-block;
+    top: 12%;
+    right: 30%;
+    font-size: 10px;
+    color: rgb(27, 27, 138);
+}
+.app-store h4 {
+    position: absolute;
+    display: inline-block;
+    top: 24%;
+    right: 16%;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(27, 27, 138)r;
+}
+.app-store i {
+    position: absolute;
+    display: inline-block;
+    top: 22%;
+    left: 12%;
+    color: rgb(27, 27, 138);
+}
+.google-play {
+    background-color: #ef3b44;
+    position: absolute;
+    display: inline-block;
+    right: 20%;
+    width: 10%;
+    height: 50px;
+}
+.google-play span {
+    position: absolute;
+    display: inline-block;
+    top: 12%;
+    right: 25%;
+    font-size: 10px;
+    color: white;
+}
+.google-play h4 {
+    position: absolute;
+    display: inline-block;
+    top: 24%;
+    right: 13%;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+.google-play i {
+    position: absolute;
+    display: inline-block;
+    top: 22%;
+    left: 9%;
+    color: white;
+}
+.header1 h3 {
+    position: absolute;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    left: 20%;
 }
