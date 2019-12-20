@@ -1,3 +1,5 @@
+/*common*/
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,7 +21,6 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     margin: auto;
     width: 68%;
-    /* background-color: cornflowerblue; */
 }
 .logo {
     width: 8%;
@@ -57,8 +58,6 @@ h1, h2, h3, h4, h5, h6 {
 .head-list {
     padding-top: 12px;
     position: absolute;
-    /* background-color: red; */
-    /* display: inline-block; */
     left: 45%;
     top: 0;
 }
@@ -86,7 +85,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 25%;
     padding-top: 12px;
     position: absolute;
-    /* background-color: bisque; */
     top: 0;
     left: 15%;
 }
@@ -109,7 +107,6 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 .phon {
-    /* background-color: yellow; */
     display: block;
 }
 
@@ -146,7 +143,8 @@ h1, h2, h3, h4, h5, h6 {
 #keywords:hover, #categories:hover, #All-seties:hover {
     border: solid 2px rgb(78, 78, 223);
 }
-/*///////*/
+/*///Categories section////*/
+
 .container {
     width: 68%;
     overflow: hidden;
@@ -155,7 +153,6 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 30px;
 }
 .categ-img {
-    /* background-color: tomato; */
     position: relative;
     width: 10.6%;
     float: left;
@@ -163,42 +160,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 .categ-img img:hover {
     -moz-transform: scaleX(-1);
-           -o-transform: scaleX(-1);
-           -webkit-transform: scaleX(-1);
-           transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
   }
 .categ-img img {
-    width: 80%;
-    -webkit-transition: all .4s ease-in-out;
-           -moz-transition: all .4s ease-in-out;
-           -ms-transition: all .4s ease-in-out;
-           -o-transition: all .4s ease-in-out;
-           transition: all .4s ease-in-out;
+    /* width: 80%;
+    border: 2px solid rgb(165, 154, 154);
+    border-radius: 50%; */
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
     text-align: center;
-}
-a {
-    text-decoration: none;
 }
 .categ-img span {
     display: block; 
     width: 90px;
     padding-top: 10px;
-    /* background-color: yellow; */
     color: rgb(68, 68, 211);
     text-transform: capitalize;
     font-weight: bold;
     font-size: 14px;
+    
 }
 .between {
     margin: 0 3%;
 }
 .categs {
-    /* background-color: violet; */
-    
     margin-top: 30px;
 }
 
-/*//////////////////*/
+/*/////////ads section/////////*/
 .ads {
     border-top: 2px rgb(218, 203, 203) solid;
     border-bottom: 2px rgb(218, 203, 203)solid;
@@ -206,14 +200,12 @@ a {
 .feature-ads {
     position: relative;
     float: left;
-    /* background-color: tomato; */
     width: 48%;
     padding-bottom: 20px;
 }
 .latest-ads {
     position: relative;
     float: left;
-    /* background-color: lightcoral; */
     width: 48%;
     margin-left: 4%;
     padding-bottom: 20px;
@@ -247,7 +239,6 @@ a {
 .container2 {
     width: 80%;
     overflow: hidden;
-    /* background-color: lawngreen; */
     margin: auto;
     padding: 50px 0;
 }
@@ -255,16 +246,12 @@ a {
     position: absolute;
     display: inline-block;
     right: 0;
-    /* background-color: royalblue; */
     top: 30%;
 }
 /* ads details*/
 .clear {
     clear: both;
 }
-/* .ads-details {
-    background-color: teal;
-} */
 .ad-img {
     position: relative;
     width: 14%;
@@ -298,7 +285,6 @@ a {
     display: block;
     font-size: 20px;
     font-weight: bold;
-    /* color: #ef3b44; */
 }
 /*ads btns*/
 .call-btn, .chat-btn {
@@ -337,6 +323,7 @@ a {
 .call-btn:hover, .chat-btn:hover {
     background-color: rgb(231, 217, 217);
 }
+
 /* add yor store*/
 .your-store-item {
     float: left;
@@ -418,6 +405,20 @@ a {
 }
 .post-free-item img {
     width: 100%;
+    border: 2.5px solid rgb(36, 36, 113);
+    border-radius: 50%;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    text-align: center;
+}
+.post-free-item img:hover {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 .post-free {
     overflow: hidden;
@@ -451,6 +452,7 @@ a {
 .button-bottom:hover {
     opacity: .9;
 }
+
 /*footer 1*/
 .footer1 {
     padding: 80px 0;
