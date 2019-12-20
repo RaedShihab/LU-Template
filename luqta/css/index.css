@@ -8,6 +8,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*Header*/
+.header::before {
+    content: '';
+    display: block;
+    height: 4px;
+    background-color: #ef3b44;
+    width: 100%;
+}
 .containeer {
     position: relative;
     margin: auto;
@@ -17,11 +24,13 @@ h1, h2, h3, h4, h5, h6 {
 .logo {
     width: 8%;
     position: relative;
+    padding-top: 12px;
 }
 .logo img {
     width: 100%;
 }
 .background-img {
+    padding-top: 12px;
     position: relative;
     width: 100%;
 }
@@ -29,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 .head-list li {
+    text-align: center;
     display: inline-block;
     font-weight: 700;
     font-size: 14px;
@@ -36,16 +46,19 @@ h1, h2, h3, h4, h5, h6 {
 .head-list a {
     padding: 0 15px;
     width: 100%;
-        display: block;
+    display: block;
 }
 .head-list span {
     display: block;
     padding-top: 7px;
+    text-transform: capitalize;
+    text-decoration: none;
 }
 .head-list {
+    padding-top: 12px;
     position: absolute;
     /* background-color: red; */
-    display: inline-block;
+    /* display: inline-block; */
     left: 45%;
     top: 0;
 }
@@ -62,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #ef3b44;
     border: #ef3b44 solid 2px;
     color: white;
-    border-radius: 50px;
+    border-radius:0 0 25px 25px;
     width: 250px;
     height: 50px;
 }
@@ -71,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .phone-language-section {
     width: 25%;
+    padding-top: 12px;
     position: absolute;
     /* background-color: bisque; */
     top: 0;
@@ -141,15 +155,26 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 30px;
 }
 .categ-img {
-    text-align: center;
     /* background-color: tomato; */
     position: relative;
     width: 10.6%;
     float: left;
     padding: 20px;
 }
+.categ-img img:hover {
+    -moz-transform: scaleX(-1);
+           -o-transform: scaleX(-1);
+           -webkit-transform: scaleX(-1);
+           transform: scaleX(-1);
+  }
 .categ-img img {
     width: 80%;
+    -webkit-transition: all .4s ease-in-out;
+           -moz-transition: all .4s ease-in-out;
+           -ms-transition: all .4s ease-in-out;
+           -o-transition: all .4s ease-in-out;
+           transition: all .4s ease-in-out;
+    text-align: center;
 }
 a {
     text-decoration: none;
