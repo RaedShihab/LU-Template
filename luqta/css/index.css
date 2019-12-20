@@ -288,13 +288,13 @@ a {
     transition: color 0.5s;
 }
 .ad-img > i:hover {
-   color: #ef3b44;
+   color: red;
 }
 .ad-img img {
     opacity: 1;
     border: rgb(52, 52, 159) solid 0px;
     outline: 0px solid rgb(110, 110, 235);
-     transition: border 0.1s;
+    transition: border 0.1s;
 }
 .ad-img img:hover {
     opacity: 0.99;
@@ -303,4 +303,66 @@ a {
 }
 .call-btn:hover, .chat-btn:hover {
     background-color: rgb(231, 217, 217);
+}
+/* add yor store*/
+.your-store-item {
+    float: left;
+    position: relative;
+    width: 9.3%;
+    padding-top: 50px;
+    text-align: center;
+    list-style: none;
+}
+.your-store-item.middle {
+    margin: 0 7.35%;
+}
+.your-store-item img {
+    width: 100%;
+    border:  solid 5px;
+    border-color: rgb(165, 154, 154);
+    border-radius: 30%;
+    transition: border .3s;
+}
+.your-store-item:hover img {
+    border-color: rgb(27, 27, 138)
+}
+.your-store-item a {
+    text-decoration: none;
+    display: block;
+    padding-top: 15px;
+    font-weight: bold;
+    color: rgb(27, 27, 138);
+    transition: color .6s;
+}
+.your-store-item a:hover {
+    color: rgb(110, 110, 235);
+}
+.your-store-item span {
+    display: block;
+    padding-top: 7px;
+}
+.cont {
+    width: 65%;
+}
+.ad-bar {
+    position: relative;
+}
+.ad-bar a, .ad-bar h2 {
+    display: inline-block;
+}
+.ad-bar h2 {
+    position: absolute;
+    right: 50%;
+    top: -100%;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+.ad-bar .see-all-link {
+    position: absolute;
+    right: 0;
+}
+.ad-bar .see-all-link, .ad-bar .add-link {
+    color: rgb(27, 27, 138);
+    text-transform: capitalize;
 }
