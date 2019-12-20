@@ -173,14 +173,14 @@ a {
 .feature-ads {
     position: relative;
     float: left;
-    background-color: tomato;
+    /* background-color: tomato; */
     width: 48%;
     padding-bottom: 20px;
 }
 .latest-ads {
     position: relative;
     float: left;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     width: 48%;
     margin-left: 4%;
     padding-bottom: 20px;
@@ -214,7 +214,7 @@ a {
 .container2 {
     width: 80%;
     overflow: hidden;
-    background-color: lawngreen;
+    /* background-color: lawngreen; */
     margin: auto;
     padding: 50px 0;
 }
@@ -222,20 +222,20 @@ a {
     position: absolute;
     display: inline-block;
     right: 0;
-    background-color: royalblue;
+    /* background-color: royalblue; */
     top: 30%;
 }
 /* ads details*/
 .clear {
     clear: both;
 }
-.ads-details {
+/* .ads-details {
     background-color: teal;
-}
+} */
 .ad-img {
     position: relative;
     width: 14%;
-    float: left;
+    float: left;   
 }
 .ad-img img {
     width: 100%;
@@ -258,9 +258,49 @@ a {
     font-weight: bold;
     color: rgb(36, 36, 113);
 }
+.ad-description span {
+    color: #ef3b44;
+}
 .ad-price {
     display: block;
     font-size: 20px;
     font-weight: bold;
-    color: #ef3b44;
+    /* color: #ef3b44; */
+}
+/*ads btns*/
+.call-btn, .chat-btn {
+    background-color: inherit;
+    border: 2px rgb(165, 154, 154) solid;
+    border-radius: 50px 50px 50px 50px;
+    width: 85px;
+    height: 30px;
+    transition: background-color .3s;
+}
+.call-btn i, .chat-btn i {
+    color: rgb(165, 154, 154);
+}
+.ad-img > i {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 75%;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+.ad-img > i:hover {
+   color: #ef3b44;
+}
+.ad-img img {
+    opacity: 1;
+    border: rgb(52, 52, 159) solid 0px;
+    outline: 0px solid rgb(110, 110, 235);
+     transition: border 0.1s;
+}
+.ad-img img:hover {
+    opacity: 0.99;
+    border: rgb(52, 52, 159) solid 3px;
+    outline: 3px solid rgb(110, 110, 235);
+}
+.call-btn:hover, .chat-btn:hover {
+    background-color: rgb(231, 217, 217);
 }
